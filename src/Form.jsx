@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import axios from 'axios';
 
 export default function Form() {
-  const uri = "http://127.0.0.1:3000/api/movie/data"; // Add 'http://' here
+  const uri = "https://admin-api-maaj.onrender.com/api/data"; 
   const { register, handleSubmit } = useForm();
   const [response, setResponse]= useState("")
   const onSubmit = async (data) => {
